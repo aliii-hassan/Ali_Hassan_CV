@@ -947,7 +947,7 @@ a.important:hover {
 }
 
 #conatact-detailed-individual-social-icons {
-    width: 49%;
+    width: 43%;
     float: right;
 }
 
@@ -962,7 +962,7 @@ a.important:hover {
 #conatact-detailed-individual-social-icons ul li {
     list-style:none;
     margin-left: 1%;
-    margin-top: 5%;
+    margin-top: 7%;
 }
   
 #conatact-detailed-individual-social-icons ul li a .fa {

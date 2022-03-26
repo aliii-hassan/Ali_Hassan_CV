@@ -1,0 +1,1157 @@
+/* HTML Tag CSS */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body Tag CSS */
+body {
+    background-color: black;
+    color: whitesmoke;
+    margin: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0.75em;
+}
+
+body::-webkit-scrollbar-track {
+  background: gray;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: rgb(250, 200, 0);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 150, 0);
+}
+
+.sub-heading {
+    color: gray;
+    margin-top: -7%;
+}
+
+/* Top Left Panel CSS */
+.left-panel {
+    float: left;
+    max-width: 25%;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+}
+
+#left-panel-freeze-part {
+    height: 24em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#left-panel-freeze-part::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+#left-panel-freeze-part::-webkit-scrollbar-track {
+  background: gray;
+}
+ 
+#left-panel-freeze-part::-webkit-scrollbar-thumb {
+  background: rgb(250, 200, 0);
+}
+
+#left-panel-freeze-part::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 150, 0);
+}
+
+.left-panel img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+#social-icons ul {
+    position: absolute;
+    margin-left: 9%;
+    margin-top: -1%;
+    padding: 0;
+    display:flex;
+}
+  
+#social-icons ul li {
+    list-style: none;
+    margin-left: 5%;
+}
+  
+#social-icons ul li a {
+    position: relative;
+    width:1em;
+    height:1em;
+    display:block;
+    text-align:center;
+    margin: 5%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: linear-gradient(0deg, rgb(7, 7, 7), rgb(15, 15, 15));
+    transition: 0.2s ease-in-out;
+}
+  
+#social-icons ul li a:hover {
+    transform: scale(2);
+}
+
+#social-icons ul li a i {
+    font-size: small;
+    color: rgb(250,200,0);
+}
+
+#name-bio footer {
+    text-align: left;
+    color: rgb(250,200,0);
+    font-size: smaller;
+}
+
+#name-bio footer div {
+    margin-right: 7%;
+}
+
+#name-bio footer div a:link {
+    color: aqua;
+}
+
+#name-bio footer div a:hover {
+    color: aquamarine;
+    transform: scale(1.1);
+}
+
+#email, #contact {
+    display: inline-block;
+    transition: all .2s ease-in-out;
+}
+
+#email:hover, #contact:hover {
+    transform: scale(1.1);
+}
+
+#personal-info {
+    text-align: left;
+    background-color: rgb(7, 7, 7);
+    margin: 2%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+#personal-info p {
+    float: right;
+    margin-top: -10%;
+}
+
+.dashboard {
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+
+.dashboard:hover {
+    transform: scale(1.1);
+}
+
+svg {
+    width: 7.2em;
+    height: 7.2em;
+    margin: 1em;
+}
+
+.animator-background {
+    fill: none;
+    stroke-width: 0.625em;
+    stroke: #1A2C34;
+}
+
+.circle-animator {
+    fill: none;
+    stroke-width: 0.625em;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dasharray: 360;
+}
+
+.professional-skills-left-circle, .professional-skills-center-circle, .professional-skills-right-circle {
+    width: 50%;
+    float: left;
+    stroke: rgb(250,200,0);
+}
+
+.professional-skills-center-circle {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.professional-skills-right-circle {
+    width: 50%;
+    float: right;
+    stroke: aqua;
+}
+
+.left-circle-text {
+    stroke: aqua;
+    font-family: 'Calibri';
+}
+
+.right-circle-text {
+    stroke: rgb(250,200,0);
+    font-family: 'Calibri';
+}
+
+.circle-1 {
+    stroke-dashoffset: 75;
+}
+
+.circle-1.active {
+    -webkit-animation: progress-1 2.5s ease-out;
+    animation: progress-1 2.5s ease-out;
+}
+
+.circle-2 {
+    stroke-dashoffset: 150;
+}
+
+.circle-2.active {
+    -webkit-animation: progress-2 2.5s ease-out;
+    animation: progress-2 2.5s ease-out;
+}
+
+.circle-3 {
+    stroke-dashoffset: 200;
+}
+
+.circle-3.active {
+    -webkit-animation: progress-3 2.5s ease-out;
+    animation: progress-3 2.5s ease-out;
+}
+
+.circle-4 {
+    stroke-dashoffset: 225;
+}
+
+.circle-4.active {
+    -webkit-animation: progress-4 2.5s ease-out;
+    animation: progress-4 2.5s ease-out;
+}
+
+#additional-professional-skills {
+    background-color: rgb(7, 7, 7);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 1em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+.active, #additional-professional-skills:hover {
+    background-color: rgb(15, 15, 15);
+}
+
+#additional-professional-skills:after {
+    content: '\2630';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-right: 1em;
+}
+
+.additional-professional-skills-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.75s ease-out;
+    list-style: '\2714';
+}
+
+.additional-professional-skills-content li {
+    text-align: left;
+    width: 50%;
+    color: rgb(250,200,0);
+    padding-left: 2%;
+}
+
+#personality-traits {
+    background-color: rgb(7, 7, 7);
+    margin: 1%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+#personality-traits ul {
+    list-style: '\2714';
+}
+
+#personality-traits ul li {
+    text-align: left;
+    width: 100%;
+    color: rgb(250,200,0);
+    padding-left: 2%;
+}
+
+/* Top Right Panel CSS */
+.right-panel {
+    max-width: 100%;
+    text-align: left;
+}
+
+#right-panel-top-box {
+    text-align: center;
+    width: 100%;
+    margin-left: 15%;
+}
+
+.right-panel img {
+    width: 40em;
+    height: 20em;
+    border-radius: 10%;
+    opacity: 85%;
+}
+
+.right-panel-top-slides {
+    display: none;
+}
+
+.slideshow-box {
+    max-width: 40em;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+.numeric-past-details {
+    float: left;
+    margin-left: 2.5%;
+    transition: all .2s ease-in-out;
+}
+
+.numeric-past-details:hover {
+    transform: scale(1.1);
+}
+
+.numeric-past-details h4 {
+    color: rgb(250,200,0);
+}
+
+.numeric-past-details p {
+    color: aqua;
+    margin-top: -7%;
+}
+
+.flex-boxes-container {
+    width: 100%;
+    float: left;
+    height: auto;
+    display: flexbox;
+}
+
+.flex-boxes-container a {
+    color: white;
+}
+
+.flex-box-data {
+    display: block;
+    margin: 1%;
+    width: 27.5%;
+    height: 15em;
+    background-color: rgb(15, 15, 15);
+    padding-left: 2%;
+    float: left;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.flex-box-data p {
+    color: grey;
+}
+
+.flex-box-data:hover {
+    transform: scale(1.1);
+    margin: 1.5em;
+}
+
+#education:hover {
+    background-image: url(/Images/EducationBackground.jpg);
+}
+
+#expertise:hover {
+    background-image: url(/Images/ExpertiseBackground.jpg);
+}
+
+#experience:hover {
+    background-image: url(/Images/ExperienceBackground.jpg);
+}
+
+#projects:hover {
+    background-image: url(/Images/ProjectsBackground.jpg);
+}
+
+#hobbies:hover {
+    background-image: url(/Images/HobbiesBackground.jpg);
+}
+
+#contact-detail:hover {
+    background-image: url(/Images/ContactDetailBackground.jpg);
+}
+
+#education:hover, #expertise:hover, #experience:hover, #projects:hover, #hobbies:hover, #contact-detail:hover {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+}
+
+#right-panel-freeze-part {
+    width: 75%;
+    height: 16.35em;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#right-panel-freeze-part::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+#right-panel-freeze-part::-webkit-scrollbar-track {
+  background: gray;
+}
+ 
+#right-panel-freeze-part::-webkit-scrollbar-thumb {
+  background: rgb(250, 200, 0);
+}
+
+#right-panel-freeze-part::-webkit-scrollbar-thumb:hover {
+  background: rgb(200, 150, 0);
+}
+
+#bottom-panel {
+    margin-top: 2%;
+}
+
+#detailed-explanation-div {
+    margin-top: 1%;
+}
+
+/* Education CSS */
+.education-individual-description {
+    position: relative;
+    width: 75%;
+    height: 12em;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: 1%;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10%;
+    opacity: 0;
+}
+
+.education-individual-description.active {
+    -webkit-animation: education-animation 2s forwards;
+    -webkit-animation-delay: 0.2s;
+    animation: education-animation 2s forwards;
+    animation-delay: 0.2s;
+}
+
+.education-year-degree {
+    float: left;
+    width: 20%;
+    padding-top: 3.25em;
+    text-align: center;
+    color: rgb(250, 200, 0);
+}
+
+.education-year-degree p {
+    color: aqua;
+}
+
+.education-summary {
+    background-color: rgb(7, 7, 7);
+    float: right;
+    width: 76%;
+    height: inherit;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: gray;
+    border-radius: 5%;
+}
+
+.education-summary h2{
+    color: white;
+}
+
+.education-summary h3{
+    margin-top: -2.5%;
+    color: rgb(200, 200, 200);
+}
+
+.important {
+    color: rgb(200, 150, 0);
+}
+
+a.important:hover {
+    color: rgb(250, 200, 0);
+}
+
+/* Expertise CSS */
+.expertise-individual-description {
+    position: relative;
+    width: 49%;
+    height: 9em;
+    margin-top: 1%;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10%;
+    float: inline-start;
+}
+
+.expertise-individual-description-summary {
+    position: absolute;
+    background-color: rgb(7, 7, 7);
+    width: 76%;
+    height: inherit;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: gray;
+    border-radius: 5%;
+    margin-left: 20%;
+}
+
+.expertise-individual-description-summary h2{
+    color: white;
+}
+
+.expertise-individual-description-summary h3{
+    margin-top: -2.5%;
+    color: rgb(200, 200, 200);
+}
+
+.database-expertise-info {
+    width: 32%;
+    float: left;
+    margin-left: 1%;
+}
+
+.expertise-individual-description-summary-progressbar-background {
+    width: 90%;
+    background-color: whitesmoke;
+    border-radius: 25%;
+    padding-left: 1%;
+}
+
+.expertise-individual-description-summary-progressbar-foreground {
+    text-align: center;
+    line-height: inherit;
+    border-radius: inherit;
+    color: black;
+    font-size: small;
+}
+
+#mssql .expertise-individual-description-summary-progressbar-foreground {
+    width: 85%;
+    background-color: aquamarine;
+}
+
+#mysql .expertise-individual-description-summary-progressbar-foreground {
+    width: 70%;
+    background-color: rgb(250, 200, 0);
+}
+
+#mongodb .expertise-individual-description-summary-progressbar-foreground {
+    width: 40%;
+    background-color: aqua;
+}
+
+.webbackend-expertise-info {
+    width: 32%;
+    float: left;
+    margin-left: 1%;
+}
+
+#php .expertise-individual-description-summary-progressbar-foreground {
+    width: 90%;
+    background-color: aqua;
+}
+
+#javascript .expertise-individual-description-summary-progressbar-foreground {
+    width: 70%;
+    background-color: aquamarine;
+}
+
+#wordpress .expertise-individual-description-summary-progressbar-foreground {
+    width: 50%;
+    background-color: rgb(250, 200, 0);
+}
+
+.webfrontend-expertise-info {
+    width: 23%;
+    float: left;
+    margin-left: 1%;
+}
+
+#html .expertise-individual-description-summary-progressbar-foreground {
+    width: 100%;
+    background-color: rgb(250, 200, 0);
+}
+
+#css .expertise-individual-description-summary-progressbar-foreground {
+    width: 90%;
+    background-color: aqua;
+}
+
+#bootstrap .expertise-individual-description-summary-progressbar-foreground {
+    width: 85%;
+    background-color: rgb(250, 200, 0);
+}
+
+#javascript-frontend .expertise-individual-description-summary-progressbar-foreground {
+    width: 75%;
+    background-color: aquamarine;
+}
+
+.frameworks-expertise-info {
+    width: 48%;
+    float: left;
+    margin-left: 1%;
+}
+
+#laravel .expertise-individual-description-summary-progressbar-foreground {
+    width: 90%;
+    background-color: aqua;
+}
+
+#react .expertise-individual-description-summary-progressbar-foreground {
+    width: 40%;
+    background-color: rgb(250, 200, 0);
+}
+
+.gameengine-expertise-info {
+    width: 48%;
+    float: left;
+    margin-left: 1%;
+}
+
+#unity3d .expertise-individual-description-summary-progressbar-foreground {
+    width: 60%;
+    background-color: rgb(250, 200, 0);
+}
+
+#unity2d .expertise-individual-description-summary-progressbar-foreground {
+    width: 40%;
+    background-color: aqua;
+}
+
+.msoffice-expertise-info {
+    width: 19%;
+    float: left;
+    margin-left: 1%;
+}
+
+#msword .expertise-individual-description-summary-progressbar-foreground {
+    width: 90%;
+    background-color: aqua;
+}
+
+#mspowerpoint .expertise-individual-description-summary-progressbar-foreground {
+    width: 85%;
+    background-color: rgb(250, 200, 0);
+}
+
+#msexcel .expertise-individual-description-summary-progressbar-foreground {
+    width: 70%;
+    background-color: aquamarine;
+}
+
+#msaccess .expertise-individual-description-summary-progressbar-foreground {
+    width: 65%;
+    background-color: rgb(250, 200, 0);
+}
+
+#msproject .expertise-individual-description-summary-progressbar-foreground {
+    width: 60%;
+    background-color: aqua;
+}
+
+.expeprtise-description-right-panel {
+    position: relative;
+    width: 49%;
+    height: 57em;
+    margin-top: 1%;
+    background-color: rgb(15, 15, 15);
+    float: right;
+}
+
+.expertise-additional-description {
+    margin: 2%;
+    margin-top: 3%;
+    font-size: x-large;
+    color: white;
+}
+
+.expertise-additional-description-summary ul {
+    background-color: rgb(7, 7, 7);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10%;
+}
+
+.expertise-additional-description-summary ul li {
+    font-size: medium;
+    color: rgb(250, 200, 0);
+    padding-left: 2%;
+    margin-top: 0.5%;
+    list-style: '\2714';
+}
+
+.expertise-additional-description-summary ul li:nth-child(even) {
+    color: aqua;
+}
+
+.expertise-additional-description-summary ul li:nth-child(odd).active {
+    -webkit-animation: education-animation 2.5s forwards;
+    -webkit-animation-delay: 0s;
+    animation: education-animation 2.5s forwards;
+    animation-delay: 0s;
+}
+
+.expertise-additional-description-summary ul li:nth-child(even).active {
+    -webkit-animation: education-animation 3.5s forwards;
+    -webkit-animation-delay: 0.75s;
+    animation: education-animation 3.5s forwards;
+    animation-delay: 0.75s;
+}
+
+/* Experience CSS */
+.experience-individual-description {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 12em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10%;
+    opacity: 0;
+}
+
+.experience-individual-level {
+    float: left;
+    width: 13%;
+    padding-top: 1.75em;
+    padding-left: 0.75em;
+    text-align: center;
+    color: rgb(250, 200, 0);
+}
+
+.experience-individual-level p {
+    color: aqua;
+}
+
+.experience-individual-summary {
+    background-color: rgb(7, 7, 7);
+    float: right;
+    width: 76%;
+    height: inherit;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: gray;
+    border-radius: 5%;
+}
+
+.experience-individual-summary h2{
+    color: white;
+}
+
+.experience-individual-summary h3{
+    margin-top: -2.5%;
+    color: rgb(200, 200, 200);
+}
+
+.experience-individual-description:hover {
+    background-color: darkcyan;
+    
+}
+
+.experience-individual-description.active {
+    -webkit-animation: experience-animation 4s forwards;
+    animation: experience-animation 4s forwards;
+}
+
+/* Projects CSS */
+#projects-detailed-explanation h1 {
+    margin-top: 15em;
+}
+
+.project-individual-flex-box-data {
+    float: left;
+}
+
+.project-individual-flex-box-data img {
+    height: inherit;
+    width: 107%;
+    margin-left: -7%;
+}
+
+.project-individual-flex-box-data button {
+    background-color: rgb(250, 200, 0);
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    height: 5em;
+    width: 50%;
+    border-radius: 15%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.project-individual-flex-box-data:nth-child(even) button {
+    background-color: aqua;
+}
+
+.project-individual-flex-box-data button:hover {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2.5s;
+    animation-name: fade;
+    animation-duration: 2.5s;
+    opacity: 1;
+}
+
+/* Hobbies CSS */
+#hobbies-detailed-explanation h1 {
+    margin-top: 18em;
+}
+
+.hobbies-individual-description {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 12em;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10%;
+    /* opacity: 0; */
+}
+
+.hobbies-individual-name {
+    float: left;
+    width: 13%;
+    padding-top: 3em;
+    padding-left: 0.75em;
+    text-align: center;
+    color: rgb(250, 200, 0);
+}
+
+.hobbies-individual-img {
+    background-color: rgb(7, 7, 7);
+    float: right;
+    width: 76%;
+    height: inherit;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: gray;
+    border-radius: 5%;
+}
+
+.hobbies-individual-img img {
+    width: 100%;
+    margin-left: -2.5%;
+    height: inherit;
+    border-radius: 5%;
+}
+
+.hobbies-individual-description:hover {
+    background-color: darkcyan;
+    
+}
+
+/* Conatct Detail CSS */
+#contact-detailed-explanation h1 {
+    margin-top: 8em;
+}
+
+#contact-detailed-information {
+    width: 49%;
+    float: left;
+}
+
+.contact-detailed-individual-description {
+    position: relative;
+    float: left;
+    width: 49%;
+    height: 10em;
+    background-color: rgb(15, 15, 15);
+    border-radius: 10%;
+    margin-left: 1%;
+}
+
+.contact-detailed-individual-heading {
+    float: left;
+    width: 20%;
+    padding-top: 1.75em;
+    padding-left: 0.75em;
+    text-align: center;
+    margin-top: 5%;
+    color: rgb(250, 200, 0);
+}
+
+.contact-detailed-individual-summary {
+    background-color: rgb(7, 7, 7);
+    float: right;
+    width: 72%;
+    height: inherit;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: gray;
+    border-radius: 5%;
+}
+
+.contact-detailed-individual-summary-value {
+    padding-top: 17.5%;
+    padding-left: 5%;
+}
+
+.contact-detailed-individual-summary p a {
+    color: aqua;
+}
+
+.contact-detailed-individual-summary p a:hover {
+    color: aquamarine;
+}
+
+#conatact-detailed-individual-social-icons {
+    width: 49%;
+    float: right;
+}
+
+#conatact-detailed-individual-social-icons ul {
+    position: relative;
+    transform: translate(0%, 0%);
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+#conatact-detailed-individual-social-icons ul li {
+    list-style:none;
+    margin-left: 1%;
+    margin-top: 5%;
+}
+  
+#conatact-detailed-individual-social-icons ul li a .fa {
+    font-size: x-large;
+    color: rgb(15, 15, 15);
+    line-height: 3.25em;
+    transition: .5s;
+    padding-right: 2.5%;
+}
+  
+#conatact-detailed-individual-social-icons ul li a span {
+    padding:0;
+    margin:0;
+    position: absolute;
+    top: 35%;
+    color: rgb(15, 15, 15);
+    letter-spacing: 4px;
+    transition: .5s;
+}
+  
+#conatact-detailed-individual-social-icons ul li a {
+    text-decoration: none;
+    display: block;
+    width: 13.5em;
+    height:5em;
+    background: rgb(250, 200, 0);
+    text-align: left;
+    padding-left: 20px;
+    padding-left: 1.2em;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition:.5s;
+    box-shadow: -1.2em 1.2em 0.45em rgba(0,0,0,.5);
+}
+
+#conatact-detailed-individual-social-icons ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0.675em;
+    left: -1.2em;
+    height: 100%;
+    width: 1.2em;
+    background: aqua;
+    transform: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+#conatact-detailed-individual-social-icons ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -1.2em;
+    left: -0.45em;
+    height: 1.2em;
+    width: 100%;
+    background: aqua;
+    transform: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+  
+#conatact-detailed-individual-social-icons ul li a:hover {
+    transform: rotate(-30deg) skew(25deg) translate(1.2em,-0.75em);
+    box-shadow: -2.5em 2.5em 2.5em rgba(0,0,0,.5);
+}
+  
+#conatact-detailed-individual-social-icons ul li:hover .fa {
+    color:rgb(15, 15, 15);
+}
+  
+#conatact-detailed-individual-social-icons ul li:hover span {
+    color: rgb(15, 15, 15);
+}
+  
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(1) a{
+    background: rgb(66, 103, 178);
+}
+
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(1) a:before{
+    background: rgb(70, 120, 185);
+}
+
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(1) a:after{
+    background: rgb(80, 130, 190);
+}
+  
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(2) a{
+    background: rgb(0, 172, 237);
+}
+
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(2) a:before{
+    background: rgb(0, 137, 185);
+}
+
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(2) a:after{
+    background: rgb(0, 100, 150);
+}
+  
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(3) a{
+    background: rgb(252, 175, 69);
+}
+
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(3) a:before{
+    background: rgb(88, 81, 216);
+}
+
+#conatact-detailed-individual-social-icons ul li:hover:nth-child(3) a:after{
+    background: rgb(131, 58, 180);
+}
+
+/* 
+
+@media only screen and (max-width: 740px) {    
+    
+}
+
+@media only screen and (max-width: 915px) {
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+}
+
+@media only screen and (max-width: 1224px) {
+
+}
+
+*/
+
+@keyframes progress-1 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 75;
+    }
+}
+
+@keyframes progress-2 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 150;
+    }
+}
+
+@keyframes progress-3 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 200;
+    }
+}
+
+@keyframes progress-4 {
+    from {
+        stroke-dashoffset: 360;
+    }
+    to {
+        stroke-dashoffset: 225;
+    }
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+@keyframes education-animation {
+    from {
+        left: -300px;
+        opacity: 0;
+    } 
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes experience-animation {
+    from {
+        opacity: 0;
+    } 
+    to {
+        opacity: 1;
+    }
+}
